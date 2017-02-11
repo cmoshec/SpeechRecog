@@ -1,3 +1,6 @@
+
+
+
 package com.example.moshe.speechrec;
 
 import android.app.Activity;
@@ -27,8 +30,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private ListView lv;
     private TextView textView;
     /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     * ********************************commiting changes in github: ****************************
+     * goto VCS ->commit changes --> hover above commit button, and wait for commit and push option, then press it
+     *
      */
     private GoogleApiClient client;
 
@@ -73,7 +77,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     textView.setText(selectedFromList);
 
                     if (selectedFromList.contains("וויז")) {
-                    //if (selectedFromList.hashCode()==245428529) { //hashcode for "dog"
+                        //if (selectedFromList.hashCode()==245428529) { //hashcode for "dog"
 
 
                         Intent sendIntent = getPackageManager().getLaunchIntentForPackage("com.waze");
@@ -85,10 +89,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
                         Intent sendIntent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
                         startActivity(sendIntent);
+                    } else {
+                        textView.setText("app not found");
                     }
-                   // else {
-                     //   textView.setText("app not found");
-                    //}
 
                 }
             });
