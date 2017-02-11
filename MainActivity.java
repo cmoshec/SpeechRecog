@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     /**
      * ********************************commiting changes in github: ****************************
      * goto VCS ->commit changes --> hover above commit button, and wait for commit and push option, then press it
-     * 
+     *
      */
     private GoogleApiClient client;
 
