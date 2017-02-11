@@ -78,9 +78,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
                         Intent sendIntent = getPackageManager().getLaunchIntentForPackage("com.waze");
                         startActivity(sendIntent);
-                    } else {
-                        textView.setText("app not found");
                     }
+                    if (selectedFromList.contains("וואטסאפ")) {
+                        //if (selectedFromList.hashCode()==245428529) { //hashcode for "dog"
+
+
+                        Intent sendIntent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                        startActivity(sendIntent);
+                    }
+                   // else {
+                     //   textView.setText("app not found");
+                    //}
 
                 }
             });
